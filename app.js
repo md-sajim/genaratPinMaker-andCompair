@@ -42,3 +42,19 @@ document.getElementById('calc-body').addEventListener('click', function (event) 
     }
 
 })
+document.getElementById('submit-btn').addEventListener('click',function(){
+    const genaratePinId = document.getElementById("input-display")
+const genaratInnerValue = genaratePinId.value;
+const typeNumber = document.getElementById('displayFild-chack');
+const chackFild = typeNumber.value;
+const successMassige = document.getElementById('success');
+const failYourMassige = document.getElementById('failYour')
+if(genaratInnerValue === chackFild){
+    successMassige.style.display = "block";
+    failYourMassige.style.display = "none";
+}
+else{
+    failYourMassige.style.display = "block";
+    successMassige.style.display = "none"
+}
+})
